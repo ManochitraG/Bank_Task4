@@ -17,4 +17,5 @@ public class BankService {
 	public List<Bank> getAllBankDetails() {
 		return bd.getAllBankDetails();
 	}
+
 }

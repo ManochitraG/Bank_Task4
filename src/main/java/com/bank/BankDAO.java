@@ -18,4 +18,6 @@ public class BankDAO {
 	public List<Bank> getAllBankDetails() {
 		return br.findAll();
 	}
+
+	
 }

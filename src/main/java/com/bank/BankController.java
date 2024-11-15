@@ -15,7 +15,8 @@ public class BankController {
 	private BankService bs;
 	
 	@PostMapping(value="/postBankDetails")
-	public String postBankDetails(@RequestBody List<Bank> list) {		
+	public String postBankDetails(@RequestBody List<Bank> list) {	
+		System.out.println("Hi");
 		return bs.postBankDetails(list);
 	}
 	
@@ -24,4 +25,8 @@ public class BankController {
 		return bs.getAllBankDetails();
 	}
 	
+	@GetMapping("/getByName")
+	public String getById() {
+		return "Hello";
+	}
 }
